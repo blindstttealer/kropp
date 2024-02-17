@@ -1,0 +1,42 @@
+/* family section */
+
+.family {
+  background-color: var(--color-dark-alternate);
+}
+
+.family-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 7px;
+  padding-top: 132px;
+  padding-bottom: 62px;
+}
+
+.family-body {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.family-image {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (max-width: 1024px) {
+  .family-image {
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .family-image {
+    height: 180px;
+  }
+  .family-header {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+}
